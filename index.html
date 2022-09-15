@@ -1,1 +1,185 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+	<title>My blog</title>
+	<meta charset="UTF-8" />
+	<style>
+      .container {
+        width: 100vw;
+        height: 100vh;
+
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: 20px;
+
+
+        display: grid;
+
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: 50px 1fr 1fr 100px ;
+
+        gap: 10px; 
+
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .container div {
+        padding: 10px;
+        border: 1px solid black;
+      }
+
+      .header {
+        grid-column-start: 1;
+        grid-column-end: 5;
+      }
+
+        
+      .header ul {
+        height: 50px ;
+        display: flex;
+        position: relative;
+        right: 10px;
+        bottom: 37px;
+        justify-content: center;
+        
+      }
+
+      .header ul li {
+        list-style-type: none;
+        float: left;
+        text-align: center;
+        margin: 5px;
+
+      }
+
+      .content-large {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        overflow: auto;
+        font-size: 18px;
+      }
+      .content-side {
+        grid-row-start: 2;
+        grid-row-end: span 2;
+      }
+     
+      .imgOne {
+        width: 150px;
+        float: left;
+        margin: 5px;
+      }
+
+    
+      .imgTwo {
+        width: 150px;
+        float: right;
+        margin: 5px;
+      }
+    
+      .imgThree {
+        width: 150px;
+        float: left;
+        margin: 5px;
+      }
+
+      .artOne {
+        clear: right;
+      }
+
+    
+      .artTwo {
+        clear: left;
+      }
+    
+      .artThree {
+        clear: right;
+      }
+
+      .logo {
+        width: 90px;
+      }
+      
+
+      .footer {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 5;
+       
+      }
+      .footer ul {
+        height: 100px ;
+        display: flex;
+        position: relative;
+        right: 10px;
+        bottom: 37px;
+        background-color: blueviolet;
+        justify-content: space-evenly;
+        
+        
+      }
+
+      .footer ul li {
+        background-color: aqua;
+        list-style-type: none;
+        float: left;
+        margin: 5px;
+        
+        
+      }
+
+    </style>
+</head>
+
+ <body>
+    <img class="logo" src="https://www.colorcombos.com/images/colors/FF0000.png"></img>
+    <div class="container">
+      <div class="header">
+        <ul>
+            <li>Section 1</li>
+            <li>Section 2</li>
+            <li>Section 3</li>
+            <li>Section 4</li>
+        </ul>
+      </div>
+      <div class="content-side">
+            <p>Section 1</p>
+            <p>Section 2</p>
+            <p>Section 3</p>
+            <p>Section 4</p>
+            <p>Section 5</p>
+            <p>Section 6</p>
+            <p>Section 7</p>
+            <p>Section 8</p>
+            <p>Section 9</p>
+            <p>Section 10</p>
+            <p>Section 11</p>
+            <p>Section 12</p>
+            
+      </div>
+      <div class="content-large">
+        <img class="imgOne" src="https://www.colorcombos.com/images/colors/FF0000.png">
+        <article class="artOne">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse at recusandae dolor fugit, qui sequi quibusdam quaerat, ad accusantium libero provident nesciunt pariatur labore dolore, animi delectus? Obcaecati, a ea.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae molestias officiis, quidem nisi rem veniam aperiam saepe, odit repellendus vitae quos. Odio et earum suscipit? Culpa expedita fugiat necessitatibus.  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam eius doloribus, itaque eligendi, eum natus reprehenderit maiores numquam explicabo nisi sapiente ab consequatur nulla pariatur quaerat? Laboriosam dolorum veniam beatae!<br> <br></article>
+        <img class="imgTwo" src="https://www.colorcombos.com/images/colors/00FF00.png">
+        <article class="artTwo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse at recusandae dolor fugit, qui sequi quibusdam quaerat, ad accusantium libero provident nesciunt pariatur labore dolore, animi delectus? Obcaecati, a ea.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae molestias officiis, quidem nisi rem veniam aperiam saepe, odit repellendus vitae quos. Odio et earum suscipit? Culpa expedita fugiat necessitatibus.  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem incidunt earum libero, iusto culpa mollitia inventore? Ipsum vel aperiam praesentium accusantium, tempora dolore, ratione, at veritatis accusamus perferendis porro voluptates? <br> <br></article>
+        <img class="imgThree" src="https://www.colorcombos.com/images/colors/0000FF.png">
+        <article class="artThree">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse at recusandae dolor fugit, qui sequi quibusdam quaerat, ad accusantium libero provident nesciunt pariatur labore dolore, animi delectus? Obcaecati, a ea.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae molestias officiis, quidem nisi rem veniam aperiam saepe, odit repellendus vitae quos. Odio et earum suscipit? Culpa expedita fugiat necessitatibus.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum id voluptatibus saepe doloribus quia tempore tempora, fuga odit excepturi perspiciatis voluptas sequi velit perferendis facere, totam, quasi nesciunt. Quam, reiciendis. <br> <br></article>
+      </div>
+      <div class="footer">
+        <ul>
+            <li>Section 1</li>
+            <li>Section 2</li>
+            <li>Section 3</li>
+            <li>Section 4</li>
+        </ul>
+      </div>
+      
+      
+    </div>
+ </body>
+
+</html>
